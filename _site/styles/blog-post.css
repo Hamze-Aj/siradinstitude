@@ -1,0 +1,70 @@
+/* blog-post.css */
+
+article {
+    margin-bottom: 3em;
+    padding: 1.5em;
+    border: 1px solid #eee; /* Light border to separate posts */
+    border-radius: 8px;
+    background-color: #f9f9f9; /* Light background */
+}
+
+article h1 {
+    font-size: 2.5em;
+    color: #007bff; /* A nice blue, adjust to your specific shade */
+    margin-bottom: 0.5em;
+    text-align: left; /* Align headings to the left for blog posts */
+}
+
+article h2 {
+    font-size: 1.8em;
+    color: #ff8c00; /* A vibrant orange, adjust to your specific shade */
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+article p {
+    line-height: 1.7;
+    margin-bottom: 1em;
+    color: #333; /* Dark grey for good readability */
+}
+
+article a {
+    color: #007bff; /* Blue for links */
+    text-decoration: none;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+article ul, article ol {
+    margin-left: 20px;
+    margin-bottom: 1em;
+}
+
+article li {
+    line-height: 1.6;
+}
+
+article strong {
+    font-weight: bold;
+}
+
+article em {
+    font-style: italic;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1em auto;
+    border-radius: 4px; /* Slightly rounded corners for images */
+}
+
+article .blog-date {
+    display: block;
+    color: #777;
+    font-size: 0.9em;
+    margin-bottom: 1em;
+}
