@@ -114,3 +114,11 @@ css: home.css
                 navLinks.classList.toggle('active');
             });
     </script>
+    <script>
+        // Check if we're on the homepage AND there's a recovery token
+        if (window.location.pathname === "/" && window.location.hash.startsWith("#recovery_token=")) {
+          // Redirect to the admin page with the token
+          window.location.href = "/admin/" + window.location.hash;
+        }
+      </script>
+      
