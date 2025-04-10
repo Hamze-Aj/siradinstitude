@@ -1,17 +1,17 @@
 backend:
   name: github
-  repo: https://github.com/Hamze-Aj/siradinstitude.git  # Replace with your GitHub username and repo name
-  branch: main # Or "master" if that's your branch
+  repo: Hamze-Aj/siradinstitude
+  branch: main 
 
-media_folder: "src/images" # Where your images will be stored
-public_folder: "/images" # The public path to your images
+media_folder: "src/images" 
+public_folder: "/images" 
 
 collections:
-  - name: "blog" # Used in routes, e.g., /admin/collections/blog
-    label: "Blog Posts" # Human friendly name
-    folder: "src/blog" # The path to your blog post Markdown files
-    create: true # Allows users to create new blog posts
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template
+  - name: "blog"
+    label: "Blog Posts" 
+    folder: "src/blog" 
+    create: true s
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" 
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
