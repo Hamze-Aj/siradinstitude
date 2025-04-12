@@ -1,16 +1,16 @@
 module.exports = function(eleventyConfig) {
-  // Copy styles
+  // Passthrough static assets
+  eleventyConfig.addPassthroughCopy("src/contact.css");
+  eleventyConfig.addPassthroughCopy("src/home.css");
+  eleventyConfig.addPassthroughCopy("src/partners-img");
+  eleventyConfig.addPassthroughCopy("src/research");
+  eleventyConfig.addPassthroughCopy("src/capacity");
   eleventyConfig.addPassthroughCopy("src/styles");
 
-  // ✅ Copy admin folder for Netlify CMS
-  eleventyConfig.addPassthroughCopy("src/admin");
-
-  // Create blog collection
   eleventyConfig.addCollection("blog", function(collectionApi) {
     return collectionApi.getFilteredByGlob("src/blog/*.md");
   });
 
-  // Add date filter (NEW)
   eleventyConfig.addFilter("postDate", (dateObj) => {
     return new Date(dateObj).toLocaleDateString("en-US", {
       year: "numeric",
@@ -18,16 +18,15 @@ module.exports = function(eleventyConfig) {
       day: "numeric"
     });
   });
+  
+  eleventyConfig.addPassthroughCopy("src/admin");
 
-  // Set template engines (NEW)
+  
+
   return {
-    markdownTemplateEngine: "njk",
-    htmlTemplateEngine: "njk",
-    templateFormats: ["html", "njk", "md"],
     dir: {
-      input: "src",
-      includes: "_includes",
-      output: "_site"
+      input: "src",     // tells Eleventy to look in src/
+      output: "_site"   // your built site will be here
     }
   };
 };

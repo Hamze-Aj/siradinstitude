@@ -1,0 +1,39 @@
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo">SIRAD<span>Institute</span></div>
+            <div class="menu-toggle">☰</div>
+            <div class="nav-links">
+                <a href="/index.html">Home</a>
+                <a href="/about/">About</a>
+                <select id="researchDropdown" class="research-option" onclick="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+                    <option value="" disabled selected>Research</option>
+                    <option value="../research/research-and-consultancy.html">Research and Consultancy</option>
+                    <option value="../research/survey-assessments.html">Survey and Assessments</option>
+                    <option value="../research/private-sector-development.html">Private Sector Development</option>
+                    <option value="../research/digital-transformation.html">Digital Transformation</option>
+                    <option value="../research/research-tools.html">Research Tools</option>
+                </select>
+                <select id="capacityDropdown" class="capacity-option" onchange="this.value && (window.location = this.value);">
+                    <option value="../capacity/Capacity Building.html" selected>Capacity Building</option>
+                    <option value="../capacity/Capacity Building.html">Capacity Building</option>
+                    <option value="../capacity/training-conflict-resolution-peacebuilding.html">Training for conflict resolution and peacebuilding</option>
+                    <option value="../capacity/woman.html">Women and youth empowerment</option>
+                    <option value="../capacity/skill-development-new-technology.html">Skill development for new technology</option>
+                    <option value="../capacity/facilitation.html">Facilitation</option>
+                </select>
+                <a href="/contact/">Contact</a>
+            </div>
+        </nav>
+    </div>
+</header>
+<script>
+    const option = document.getElementsByClassName('research-option')[0];
+    option.addEventListener('change', function() {
+        if (this.value) {
+            console.log(this.value);
+            window.location.href = this.value;
+            console.log('Redirecting to:', this.value);
+        }
+    });
+</script>

@@ -4,29 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
-    <link rel="stylesheet" href="/styles/home.css">
+    <link rel="stylesheet" href="/home.css">
     
     <link rel="stylesheet" href="/styles/blog.css">
     
     
-</head>
-<body>
-<body class="site">
-    <header>
-        <div class="container">
-            <nav>
-                <div class="logo">SIRAD<span>Institute</span></div>
-                <div class="menu-toggle">☰</div>
-                <div class="nav-links">
-                    <a href="/">Home</a>
-                    <a href="/about/">About</a>
-                    <a href="#">Research</a>
-                    <a href="/contact/">Contact</a>
-                    <a href="/blog/">news</a>
-                </div>
-            </nav>
+
+ <header>
+    <div class="container">
+      <nav>
+        <div class="logo">SIRAD<span>Institute</span></div>
+        <div class="menu-toggle">☰</div>
+        <div class="nav-links">
+          <a href="/">Home</a>
+          <a href="/about/">About</a>
+          <select id="researchDropdown" class="research-option" onchange="this.value && (window.location = this.value);">
+            <option value="/research/research-and-consultancy.html" disabled selected>Research</option>
+            <option value="/research/research-and-consultancy.html">Research and Consultancy</option>
+            <option value="/research/survey-assessments.html">Survey and Assessments</option>
+            <option value="/research/private-sector-development.html">Private Sector Development</option>
+            <option value="/research/digital-transformation.html">Digital Transformation</option>
+            <option value="/research/research-tools.html">Research Tools</option>
+          </select>
+          <select id="capacityDropdown" class="capacity-option" onchange="this.value && (window.location = this.value);">
+            <option value="/capacity/Capacity Building.html" selected>Capacity Building</option>
+            <option value="/capacity/Capacity Building.html">Capacity Building</option>
+            <option value="/capacity/training-conflict-resolution-peacebuilding.html">Training for conflict resolution and peacebuilding</option>
+            <option value="/capacity/woman.html">Women and youth empowerment</option>
+            <option value="/capacity/skill-development-new-technology.html">Skill development for new technology</option>
+            <option value="/capacity/facilitation.html">Facilitation</option>
+          </select>
+          <a href="/contact/">Contact</a>
+          <a href="/blog/">news</a>
+
         </div>
-    </header>
+      </nav>
+    </div>
+  </header>
+
 
     <main class="main-content" >
         
@@ -37,109 +52,12 @@
     <div class="blog-grid">
       
         <article class="blog-card">
-          <a href="/blog/2025-04-10-my-real-blog-bost/" class="blog-card-link">
-            
-            
-            <div class="blog-card-content">
-              <h2>my real blog bost </h2>
-              <time class="blog-date">April 10, 2025</time>
-              
-              <span class="read-more">Read More →</span>
-            </div>
-          </a>
-        </article>
-      
-        <article class="blog-card">
-          <a href="/blog/2025-04-10-tijaabo/" class="blog-card-link">
-            
-            
-            <div class="blog-card-content">
-              <h2>tijaabo</h2>
-              <time class="blog-date">April 10, 2025</time>
-              
-              <span class="read-more">Read More →</span>
-            </div>
-          </a>
-        </article>
-      
-        <article class="blog-card">
-          <a href="/blog/2025-04-10-ubdate/" class="blog-card-link">
-            
-            
-            <div class="blog-card-content">
-              <h2>ubdate</h2>
-              <time class="blog-date">April 10, 2025</time>
-              
-              <span class="read-more">Read More →</span>
-            </div>
-          </a>
-        </article>
-      
-        <article class="blog-card">
-          <a href="/blog/2025-04-10-this-is-yet-another-test/" class="blog-card-link">
-            
-            
-            <div class="blog-card-content">
-              <h2>this is yet another test </h2>
-              <time class="blog-date">April 10, 2025</time>
-              
-              <span class="read-more">Read More →</span>
-            </div>
-          </a>
-        </article>
-      
-        <article class="blog-card">
-          <a href="/blog/2025-04-10-anohter-test/" class="blog-card-link">
-            
-            
-            <div class="blog-card-content">
-              <h2>anohter test</h2>
-              <time class="blog-date">April 10, 2025</time>
-              
-              <span class="read-more">Read More →</span>
-            </div>
-          </a>
-        </article>
-      
-        <article class="blog-card">
-          <a href="/blog/2025-04-10-test-blog-bost/" class="blog-card-link">
-            
-              <div class="blog-card-image">
-                <img src="/images/Screenshot from 2025-04-08 10-04-39.png" alt="test blog bost">
-              </div>
-            
-            
-            <div class="blog-card-content">
-              <h2>test blog bost</h2>
-              <time class="blog-date">April 10, 2025</time>
-              
-                <p class="blog-excerpt">hello whaaat</p>
-              
-              <span class="read-more">Read More →</span>
-            </div>
-          </a>
-        </article>
-      
-        <article class="blog-card">
-          <a href="/blog/third-post/" class="blog-card-link">
-            
-            
-            <div class="blog-card-content">
-              <h2>Your First Blog Post</h2>
-              <time class="blog-date">April 9, 2025</time>
-              
-              <span class="read-more">Read More →</span>
-            </div>
-          </a>
-        </article>
-      
-        <article class="blog-card">
-          <a href="/blog/sixth-post/" class="blog-card-link">
+          <a href="/blog/wellcome/" class="blog-card-link">
             
             
             <div class="blog-card-content">
               <h2></h2>
-              <time class="blog-date">April 9, 2025</time>
+              <time class="blog-date">April 12, 2025</time>
               
               <span class="read-more">Read More →</span>
             </div>
@@ -147,12 +65,12 @@
         </article>
       
         <article class="blog-card">
-          <a href="/blog/fourth-post/" class="blog-card-link">
+          <a href="/blog/well/" class="blog-card-link">
             
             
             <div class="blog-card-content">
               <h2></h2>
-              <time class="blog-date">April 9, 2025</time>
+              <time class="blog-date">April 12, 2025</time>
               
               <span class="read-more">Read More →</span>
             </div>
@@ -160,38 +78,12 @@
         </article>
       
         <article class="blog-card">
-          <a href="/blog/fifth-post/" class="blog-card-link">
+          <a href="/blog/hello/" class="blog-card-link">
             
             
             <div class="blog-card-content">
               <h2></h2>
-              <time class="blog-date">April 9, 2025</time>
-              
-              <span class="read-more">Read More →</span>
-            </div>
-          </a>
-        </article>
-      
-        <article class="blog-card">
-          <a href="/blog/second-post/" class="blog-card-link">
-            
-            
-            <div class="blog-card-content">
-              <h2>second Blog Post</h2>
-              <time class="blog-date">April 8, 2025</time>
-              
-              <span class="read-more">Read More →</span>
-            </div>
-          </a>
-        </article>
-      
-        <article class="blog-card">
-          <a href="/blog/first-post/" class="blog-card-link">
-            
-            
-            <div class="blog-card-content">
-              <h2>First Blog Post</h2>
-              <time class="blog-date">April 8, 2025</time>
+              <time class="blog-date">April 12, 2025</time>
               
               <span class="read-more">Read More →</span>
             </div>
@@ -203,37 +95,36 @@
 </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <h3>SIRAD Institute</h3>
-                    <p>Uniting communities to develop sustainable solutions for peace and inclusive development.</p>
-                </div>
-                <div class="footer-column">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/about/">About</a></li>
-                        <li><a href="#">Research</a></li>
-                        <li><a href="/contact/">Contact</a></li>
-                        <li><a href="/blog/">news</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Contact Us</h3>
-                    <ul>
-                        <li>Addis Ababa, Ethiopia</li>
-                        <li>info@sirad.org</li>
-                        <li>+251 123 456 789</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>&copy; 2025 SIRAD Institute for Research and Development. All rights reserved.</p>
-            </div>
+     <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>SIRAD Institute</h3>
+          <p>Uniting communities to develop sustainable solutions for peace and inclusive development.</p>
         </div>
-    </footer>
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="#">Research</a></li>
+            <li><a href="/contact/">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Contact Us</h3>
+          <ul>
+            <li>Addis Ababa, Ethiopia</li>
+            <li>info@sirad.org</li>
+            <li>+251 123 456 789</li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 SIRAD Institute for Research and Development. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
 
     <script>
         const menuToggle = document.querySelector('.menu-toggle');

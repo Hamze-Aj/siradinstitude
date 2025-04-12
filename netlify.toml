@@ -1,7 +1,0 @@
-[build]
-  publish = "_site" # or "dist" or your actual output folder
-
-[[redirects]]
-  from = "/admin/"
-  to = "/admin/index.html"
-  status = 200

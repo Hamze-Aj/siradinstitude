@@ -1,10 +1,8 @@
 ---
-layout: base.njk
+layout: layout.html
 title: contact
-css: contact.css
 ---
-
-
+ 
 
     <!-- Main Content -->
     <main>
@@ -50,6 +48,7 @@ css: contact.css
         </section>
     </main>
 
+ 
 
     <script>
         // Simple page routing
@@ -84,5 +83,15 @@ css: contact.css
             });
         // });
     </script>
-</body>
-</html>
+       <script>
+        document.getElementById('researchDropdown').addEventListener('change', function() {
+if (this.value) {
+console.log(this.value);
+window.location.href = this.value;
+console.log('Redirecting to:', this.value);
+}
+});
+</script>
+<script src="/research/js/loader-footer.js"></script>
+<script src="/research/js/loader-header.js"></script>
+<script src="/research/js/research.js"></script>

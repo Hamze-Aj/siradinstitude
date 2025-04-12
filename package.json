@@ -1,21 +1,24 @@
 {
-  "name": "sirad.com",
+  "name": "do-not-touch-",
   "version": "1.0.0",
-  "description": "",
-  "main": ".eleventy.js",
+  "description": "Static site using Eleventy with existing HTML structure",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx eleventy --serve",
-    "build": "npx eleventy"
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ItqanTeam/do-NOT-TOUCH-.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ItqanTeam/do-NOT-TOUCH-/issues"
+  },
+  "homepage": "https://github.com/ItqanTeam/do-NOT-TOUCH-#readme",
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0"
-  },
-  "dependencies": {
-    "app": "^0.1.0",
-    "netlify-cms": "^2.10.192"
   }
 }

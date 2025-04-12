@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="../home.css">
+  <link rel="stylesheet" href="research/js/load-components.js">
+  <style>
+    :root {
+        --teal: #4B8B9D;
+        --pearl: #E8DFD5;
+        --rose: #C98880;
+        --charcoal: #3A3A3A;
+        --misty-blue: #A7BED3;
+        --white: #FFFFFF;
+        --primary: #2c5e92;
+        --secondary: #e67e22;
+        --light: #f5f7fa;
+        --dark: #333;
+        --accent: #27ae60;
+    }
+    
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: var(--charcoal);
+        margin: 0;
+        padding: 0;
+        background-color: var(--pearl);
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    .page-header {
+    background: linear-gradient(135deg, var(--teal), var(--primary));
+    color: var(--white);
+    height: 70vh;
+    padding: 60px 0 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.page-header .container{
+    margin-top: 8%;
+  }
+    .page-header::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 10px;
+        background: var(--rose);
+    }
+    
+    .page-title {
+        font-size: 2.8rem;
+        margin-bottom: 20px;
+        font-weight: 700;
+    }
+    
+    .page-subtitle {
+        font-size: 1.2rem;
+        max-width: 800px;
+        margin: 0 auto;
+        opacity: 0.9;
+    }
+    
+    section {
+        padding: 60px 0;
+    }
+    
+    .section-title {
+        color: var(--primary);
+        font-size: 2rem;
+        margin-bottom: 30px;
+        position: relative;
+        padding-bottom: 15px;
+    }
+    
+    .section-title::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 80px;
+        height: 4px;
+        background: var(--secondary);
+    }
+    
+    .service-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        margin-top: 40px;
+    }
+    
+    .service-card {
+        background: var(--white);
+        border-radius: 8px;
+        padding: 30px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        border-top: 4px solid var(--secondary);
+    }
+    
+    .service-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    }
+    
+    .service-card h3 {
+        color: var(--primary);
+        margin-top: 0;
+        font-size: 1.5rem;
+    }
+    
+    .business-icon {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+        color: var(--secondary);
+    }
+    
+    .research-highlights {
+        background: var(--misty-blue);
+        padding: 40px;
+        border-radius: 8px;
+        margin: 40px 0;
+    }
+    
+    .partner-logos {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+        margin-top: 30px;
+        align-items: center;
+    }
+    
+    .partner-logo {
+        max-width: 180px;
+        max-height: 100px;
+        object-fit: contain;
+        filter: grayscale(100%);
+        opacity: 0.8;
+        transition: all 0.3s ease;
+    }
+    
+    .partner-logo:hover {
+        filter: grayscale(0%);
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    
+    .impact-stats {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 30px;
+        text-align: center;
+        margin-top: 40px;
+    }
+    
+    .stat-item {
+        background: var(--white);
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .stat-number {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: var(--secondary);
+        margin-bottom: 10px;
+    }
+    
+    .cta {
+        text-align: center;
+        background: var(--light);
+    }
+    
+    .contact-box {
+        background: var(--white);
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        border: 1px solid var(--misty-blue);
+    }
+    
+    .contact-methods {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 30px;
+        flex-wrap: wrap;
+    }
+    
+    .contact-method {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 1.1rem;
+        color: var(--primary);
+    }
+    
+    .btn {
+        display: inline-block;
+        background: var(--secondary);
+        color: var(--white);
+        padding: 12px 30px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: bold;
+        margin-top: 20px;
+        transition: all 0.3s ease;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .btn:hover {
+        background: #d35400;
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(230, 126, 34, 0.4);
+    }
+    
+    ul {
+        padding-left: 20px;
+    }
+    
+    li {
+        margin-bottom: 10px;
+    }
+    
+    @media (max-width: 768px) {
+        .page-title {
+            font-size: 2.2rem;
+        }
+        
+        .service-grid, .impact-stats {
+            grid-template-columns: 1fr;
+        }
+        
+        .partner-logos {
+            gap: 20px;
+        }
+        
+        .partner-logo {
+            max-width: 120px;
+        }
+        
+        .contact-methods {
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+    }
+</style>
+
+</head>
+<body>
+  <!-- Header will be loaded here -->
+  <div id="header-placeholder"></div>
+
+  <!-- Main content (unique per page) -->
+  <main>
+    <header class="page-header">
+      <div class="container">
+          <h1 class="page-title">Private Sector Development Research & Consultancy</h1>
+          <p class="page-subtitle">Driving sustainable business growth through evidence-based strategies and innovative solutions</p>
+      </div>
+  </header>
+  
+  <section class="container">
+      <h2 class="section-title">Our Private Sector Services</h2>
+      <p>We combine rigorous research with practical consultancy to strengthen businesses, foster entrepreneurship, and improve market systems.</p>
+      
+      <div class="service-grid">
+          <div class="service-card">
+              <div class="business-icon">🏭</div>
+              <h3>MSME Development</h3>
+              <ul>
+                  <li>Capacity needs assessments</li>
+                  <li>Business model innovation</li>
+                  <li>Access to finance strategies</li>
+                  <li>Value chain integration</li>
+              </ul>
+          </div>
+          
+          <div class="service-card">
+              <div class="business-icon">💼</div>
+              <h3>Entrepreneurship Ecosystems</h3>
+              <ul>
+                  <li>Startup support program design</li>
+                  <li>Incubator/accelerator development</li>
+                  <li>Investor readiness programs</li>
+                  <li>Entrepreneurial skills training</li>
+              </ul>
+          </div>
+          
+          <div class="service-card">
+              <div class="business-icon">🔄</div>
+              <h3>Market Systems Development</h3>
+              <ul>
+                  <li>Sectoral competitiveness analysis</li>
+                  <li>Inclusive business models</li>
+                  <li>Private-public dialogue facilitation</li>
+                  <li>Market linkage programs</li>
+              </ul>
+          </div>
+          
+          <div class="service-card">
+              <div class="business-icon">📈</div>
+              <h3>Investment Climate Research</h3>
+              <ul>
+                  <li>Policy impact assessments</li>
+                  <li>Regulatory environment analysis</li>
+                  <li>Investment promotion strategies</li>
+                  <li>Business enabling environment reforms</li>
+              </ul>
+          </div>
+          
+          <div class="service-card">
+              <div class="business-icon">🌱</div>
+              <h3>Sustainable Business Practices</h3>
+              <ul>
+                  <li>ESG integration frameworks</li>
+                  <li>Circular economy models</li>
+                  <li>Green business certification</li>
+                  <li>Sustainable supply chain development</li>
+              </ul>
+          </div>
+          
+          <div class="service-card">
+              <div class="business-icon">🤝</div>
+              <h3>Public-Private Partnerships</h3>
+              <ul>
+                  <li>PPP feasibility studies</li>
+                  <li>Contract design and negotiation</li>
+                  <li>Risk allocation frameworks</li>
+                  <li>Monitoring and evaluation systems</li>
+              </ul>
+          </div>
+      </div>
+      
+      <div class="research-highlights">
+          <h3>Our Research Focus Areas</h3>
+          <p>Our consultancy is informed by ongoing research in entrepreneurship dynamics, market failures, business policy impacts, and innovative financing mechanisms.</p>
+          
+          <div class="impact-stats">
+              <div class="stat-item">
+                  <div class="stat-number">85%</div>
+                  <p>of client businesses report improved performance</p>
+              </div>
+              <div class="stat-item">
+                  <div class="stat-number">120+</div>
+                  <p>market systems analyses conducted</p>
+              </div>
+              <div class="stat-item">
+                  <div class="stat-number">40</div>
+                  <p>countries with our research partnerships</p>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+  <section>
+      <div class="container">
+          <h2 class="section-title">Our Private Sector Partners</h2>
+          <p>We collaborate with leading business organizations, financial institutions, and development agencies.</p>
+          
+          <div class="partner-logos">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/International_Finance_Corporation_logo.svg" alt="IFC" class="partner-logo">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/UNDP_logo.svg" alt="UNDP" class="partner-logo">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/World_Bank_Group_logo.svg" alt="World Bank Group" class="partner-logo">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/International_Chamber_of_Commerce_logo.svg" alt="ICC" class="partner-logo">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/EBRD_logo.svg" alt="EBRD" class="partner-logo">
+          </div>
+      </div>
+  </section>
+  
+  <section class="cta">
+      <div class="container">
+          <div class="contact-box">
+              <h2 class="section-title">Enhance Your Private Sector Impact</h2>
+              <p>Whether you're a business association, government agency, or development partner, our research and consultancy services can strengthen your private sector development initiatives.</p>
+              
+              <a href="#" class="btn">Discuss Partnership</a>
+              
+              <div class="contact-methods">
+                  <div class="contact-method">📧 Email: privatesector@sirad.org</div>
+                  <div class="contact-method">🌐 Website: www.sirad.org/private-sector</div>
+                  <div class="contact-method">📞 Phone: +XXX-XXX-XXXX</div>
+              </div>
+          </div>
+      </div>
+  </section>
+  </main>
+
+  <!-- Footer will be loaded here -->
+  <div id="footer-placeholder"></div>
+ 
+  </script>
+  <!-- Load JavaScript at the end of the body -->
+  <script src="js/loader-header.js"></script>
+  <script src="js/loader-footer.js"></script>
+</body>
+</html>

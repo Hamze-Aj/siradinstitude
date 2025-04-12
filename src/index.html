@@ -1,11 +1,7 @@
 ---
-layout: base.njk
+layout: layout.html
 title: Home
-css: home.css
 ---
-
-
-    
 
     <!-- Hero Section -->
     <section class="hero">
@@ -14,6 +10,7 @@ css: home.css
             <p>Empowering communities to engineer peace through evidence-based research and inclusive development strategies.</p>
             <a href="#" class="btn">Explore Our Work</a>
         </div>
+        <div class="hero-text"><span class="hero-span">The SIRAD Institute for Research and Development (SIRAD)</span> is a leading civil society organization in Ethiopia dedicated to uniting communities to develop and implement sustainable, evidence-based solutions for peace, social cohesion, Capacity building and empowering women and youth for inclusive development. In addition to its peacebuilding efforts, SIRAD also operates as a research consultant firm and policy advisory institute.</div>
     </section>
 
     <!-- Mission Section -->
@@ -23,25 +20,9 @@ css: home.css
                 <h2>Our Mission</h2>
                 <p>We unite communities in developing sustainable solutions that promote peace, human rights, and social cohesion while serving as a leading research and policy advisory institute.</p>
             </div>
-            <div class="mission-content">
-                <div class="mission-text">
-                    <h3>Building Peace from the Ground Up</h3>
-                    <p>SIRAD bridges the gap between grassroots knowledge and policy-making. We don't just study conflict - we equip Ethiopians with the tools to solve it through:</p>
-                    <ul>
-                        <li>Community-led peacebuilding initiatives</li>
-                        <li>Cutting-edge conflict research</li>
-                        <li>Policy frameworks adopted by governments</li>
-                        <li>Capacity building for sustainable impact</li>
-                    </ul>
-                    <a href="about.html" class="btn" style="margin-top: 1.5rem;">Learn About Our Approach</a>
-                </div>
-                <div class="mission-image">
-                    <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216" alt="Community meeting">
-                </div>
-            </div>
 
-            <div class="section-title sectionTwo">
-                <h2>Our Vission</h2>
+            <div class="section-title sectionTwo"> 
+                <h2>Our Vision</h2>
                 <p>We unite communities in developing sustainable solutions that promote peace, human rights, and social cohesion while serving as a leading research and policy advisory institute.</p>
             </div>
             <div class="mission-content">
@@ -58,8 +39,14 @@ css: home.css
                         <li>Capacity building for sustainable impact</li>
                     </ul>
                     <a href="about.html" class="btn" style="margin-top: 1.5rem;">Learn About Our Approach</a>
-                </div>
+                </div> 
             </div>
+        </div>
+    </section>
+    <section>
+        <div class="map">
+            <h2>Our Reach in World</h2>
+            <img src="partners-img/map-of-ethiopia.gif" alt="Map of Ethiopia">
         </div>
     </section>
 
@@ -105,14 +92,23 @@ css: home.css
         </div>
     </section>
 
-    
+  
+
     <script>
         const menuToggle = document.querySelector('.menu-toggle');
-            const navLinks = document.querySelector('.nav-links');
-            
-            menuToggle.addEventListener('click', function() {
-                navLinks.classList.toggle('active');
-            });
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', function () {
+            navLinks.classList.toggle('active');
+        });
+
+        document.getElementById('researchDropdown').addEventListener('change', function () {
+            if (this.value) {
+                window.location.href = this.value;
+            }
+        });
     </script>
-    
-      
+    <script src="./research/js/loader-footer.js"></script>
+    <script src="./research/js/loader-header.js"></script>
+    <!-- <script src="/research/js/research.js"></script> -->
+
