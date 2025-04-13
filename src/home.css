@@ -38,6 +38,9 @@ header {
     position: fixed;
     width: 100%;
     z-index: 100;
+    top: 0;
+    left: 0;
+    margin-top: 0px;
 }
 
 nav {
@@ -45,16 +48,31 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 0;
+    height: 15vh;
 }
 
-.logo {
+/* .logo {
     font-size: 1.8rem;
     font-weight: 700;
     color: var(--primary);
-}
+} */
 
-.logo span {
+/* .logo span {
     color: var(--secondary);
+} */
+.logo {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--primary);
+    text-decoration: none;
+    transition: color 0.3s; 
+}
+.logo img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+    vertical-align: middle;
+    background-color: var(--white);
 }
 
 .nav-links {
