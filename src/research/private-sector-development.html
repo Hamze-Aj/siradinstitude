@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home Page</title>
-  <link rel="stylesheet" href="../home.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="shared.css">
   <link rel="stylesheet" href="research/js/load-components.js">
   <style>
     :root {
@@ -240,6 +241,9 @@
     }
     
     @media (max-width: 768px) {
+        .section-title::after{
+            left: 40%;
+        }
         .page-title {
             font-size: 2.2rem;
         }

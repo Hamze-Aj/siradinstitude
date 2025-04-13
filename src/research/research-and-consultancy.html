@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home Page</title>
-  <link rel="stylesheet" href="../home.css">
+  <link rel="stylesheet" href="header.css">
   <link rel="stylesheet" href="/research/js/load-components.js">
 </head>
 <style>
@@ -246,6 +246,9 @@
           font-size: 2.2rem;
       }
       
+      .section-title::after{
+            left: 40%;
+        }
       .service-grid, .impact-stats {
           grid-template-columns: 1fr;
       }
@@ -409,12 +412,21 @@
   <!-- Footer will be loaded here -->
   <div id="footer-placeholder"></div>
   
-  <script>
-    const option = document.getElementById('researchDropdown');
-
-  </script>
   <script src="js/loader-header.js"></script>
   <script src="js/loader-footer.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const menuToggle = document.querySelector('.menu-toggle');
+      const navLinks = document.querySelector('.nav-links');
+  
+      menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active')
+        
+        navLinks.classList.toggle('active');
+      });
+    });
+  </script>
+
 
 </body>
 </html>

@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home Page</title>
   <link rel="stylesheet" href="../home.css" />
 </head>
@@ -30,7 +31,8 @@
     background-color: var(--pearl);
     /* padding-top: 80px; ✅ Add space for fixed header */
   }
-  #header-placeholder{
+
+  #header-placeholder {
     padding-top: -5%;
   }
 
@@ -51,7 +53,8 @@
     z-index: 1;
 
   }
-  .page-header > *{
+
+  .page-header>* {
     margin-top: 8%;
   }
 
@@ -229,6 +232,10 @@
       font-size: 2.2rem;
     }
 
+    .section-title::after {
+      left: 40%
+    }
+
     .approach-grid {
       grid-template-columns: 1fr;
     }
@@ -240,6 +247,7 @@
     }
   }
 </style>
+
 <body>
   <!-- Header will be loaded here -->
   <div id="header-placeholder"></div>
@@ -249,7 +257,8 @@
     <header class="page-header">
       <div class="container">
         <h1 class="page-title">Capacity Building at SIRAD</h1>
-        <p class="page-subtitle">Empowering individuals and organizations through knowledge, skills, and innovation for sustainable development</p>
+        <p class="page-subtitle">Empowering individuals and organizations through knowledge, skills, and innovation for
+          sustainable development</p>
       </div>
     </header>
 
@@ -329,4 +338,5 @@
   <script src="../research/js/loader-header.js"></script>
   <script src="../research/js/loader-footer.js"></script>
 </body>
+
 </html>
