@@ -38,6 +38,9 @@ header {
     position: fixed;
     width: 100%;
     z-index: 100;
+    top: 0;
+    left: 0;
+    margin-top: 0px;
 }
 
 nav {
@@ -47,14 +50,28 @@ nav {
     padding: 1.5rem 0;
 }
 
-.logo {
+/* .logo {
     font-size: 1.8rem;
     font-weight: 700;
     color: var(--primary);
-}
+} */
 
-.logo span {
+/* .logo span {
     color: var(--secondary);
+} */
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary);
+    text-decoration: none;
+    transition: color 0.3s; 
+}
+.logo img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    vertical-align: middle;
+    background-color: var(--white);
 }
 
 .nav-links {
