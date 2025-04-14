@@ -240,6 +240,11 @@ nav {
     display: flex;
 
 }
+#map-text{
+color: var(--primary);
+font-size: 2rem;
+margin-top: 2rem;
+}
 .map img{
     width: 80%;
     height: 100%;
