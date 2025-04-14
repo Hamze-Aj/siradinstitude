@@ -20,5 +20,8 @@
   "homepage": "https://github.com/ItqanTeam/do-NOT-TOUCH-#readme",
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1"
   }
 }
