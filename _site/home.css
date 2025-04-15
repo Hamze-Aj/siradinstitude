@@ -135,8 +135,6 @@ nav {
 .hero-content {
     max-width: 800px;
     margin: 0 auto;
-    margin-top: 30px;
-
 }
 
 .hero h1 {
@@ -148,7 +146,6 @@ nav {
 .hero p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
-    
 }
 
 .btn {
@@ -172,7 +169,7 @@ nav {
 .hero-text{
     margin-top: 5rem;
     text-align: center;
-    width: 80%;
+    width: 50%;
 }
 .hero-span {
     font-size: 20px;
@@ -863,25 +860,7 @@ footer {
     .menu-toggle {
         display: block;
     }
-
-    .hero-content {
-        margin-top: 5rem;
-    }
-
-    .logo-text{
-        display: none;
-    }
-
-    .hero-text {
-        margin-top: 2rem;
-        /* text-align: ; */
-        width: 80%;
-    }
     
-    .page-header  {
-        margin-top: 14%;
-    }
-
     .nav-links {
         position: fixed;
         top: 80px;
@@ -899,10 +878,6 @@ footer {
         left: 0;
     }
     
-    .mission{
-        padding: 5rem 0 1rem;
-    }
-
     .hero h1 {
         font-size: 2rem;
     }
@@ -925,22 +900,17 @@ footer {
    .mission-text{
     margin-bottom: 5rem;
    }
-   .partner-logo {
-    flex: 0 0 calc(50% - 20px); /* 2 per row on mobile */
-  }
+   
 }
 
 .map{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 40vh;
 }
 .map h2{
 margin-bottom: 20px;
 }
-
-
 
 .site {
     display: flex;
@@ -950,41 +920,4 @@ margin-bottom: 20px;
 .main-content {
     flex-grow: 1; /* Allow the main content to grow and push the footer down */
     padding-top: 95px;
-}
-
-.partners {
-    /* background: var(--primary);
-    color: var(--white); */
-}
-
-.partners .section-title {
-    color: var(--dark);
-}
-
-.partners .section-title::after {
-    background: var(--rose);
-}
-
-.partner-logos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-  }
-  
-  .partner-logo {
-    width: 150px;
-    height: 100px;
-    object-fit: contain;
-    flex: 0 0 calc(25% - 20px); /* 4 per row with gap */
-  }
-
-.partners p{
-    text-align: center;
-}
-.partner-logo:hover {
-filter: grayscale(0%);
-opacity: 1;
-transform: scale(1.05);
 }
