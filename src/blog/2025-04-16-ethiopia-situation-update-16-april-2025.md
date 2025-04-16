@@ -6,8 +6,6 @@ date: 2025-04-16T16:09:03.463Z
 image: /images/Ethio news.webp
 excerpt: ''
 ---
-<!--StartFragment-->
-
 ### **Civilian targeting increases while Fano-ENDF clashes decline in Amhara**
 
 Two weeks after the four[Fano militias](https://epo.acleddata.com/actor-profiles/#1622661145930-ef6e1f53-957f)— Amhara Fano in Gondar, Shewa, Gojam, and Wello —[announced the start of a coordinated operation called Andinet](https://epo.acleddata.com/2025/04/02/ethiopia-situation-update-2-april-2025/#keytrends1)(Amharic for “unity”) to target security force bases in the Amhara region, the number of battles between the militias and government forces has decreased by over 66%, compared to the previous fortnight. This decrease comes after the beginning of operation Andinet drove an increase in battle events.
