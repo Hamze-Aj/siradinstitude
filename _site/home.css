@@ -4,7 +4,7 @@
     --rose: #C98880;
     --charcoal: #3A3A3A;
     --misty-blue: #A7BED3;
-    --white: #FFFFFF;
+    --white: hsl(0, 0%, 100%);
     --primary: #2c5e92;  /* Deep blue for trust */
     --secondary: #e67e22;  /* Orange for action */
     --light: #f5f7fa;
@@ -489,3 +489,73 @@ filter: grayscale(0%);
 opacity: 1;
 transform: scale(1.05);
 }
+
+
+.peacebuilder-section {
+    background-color: #2c5e92;
+    padding: 50px 20px;
+    text-align: center;
+    color: black;
+  }
+  
+  .peacebuilder-section h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  .peacebuilder-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+  
+  .peacebuilder-card {
+    background: white;
+    border-radius: 20px;
+    padding: 20px 10px;
+    width: 230px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .peacebuilder-card img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 2px solid #2c5e92;
+  }
+  
+  .peacebuilder-name {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #27ae60;
+  }
+  
+  .peacebuilder-role {
+    font-weight: bold;
+    color: #e67e22;
+    margin: 5px 0;
+  }
+  
+  .peacebuilder-description {
+    font-size: 14px;
+    margin: 15px 0;
+  }
+  
+  .peacebuilder-socials {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 18px;
+    color: #2c5e92;
+  }
+  
+  .peacebuilder-socials i:hover {
+    color: #27ae60;
+    cursor: pointer;
+  }
+  
+  
