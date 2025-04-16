@@ -83,6 +83,8 @@
           </select>
           <a href="/contact/">Contact</a>
           <a href="/blog/">news</a>
+          <a href="/admin">Admin</a>
+
 
         </div>
       </nav>
@@ -155,13 +157,13 @@
 <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script>
     (function() {
-        emailjs.init("X5AV-LwMHG6WOhQBh"); // Your public key
+        emailjs.init("_huXl7YhsW4cSw58i"); // Your public key
     })();
 
     document.getElementById("contact-form").addEventListener("submit", function(e) {
         e.preventDefault();
 
-        emailjs.sendForm("service_kty18qa", "template_7vd6dtc", this)
+        emailjs.sendForm("service_vaeq8yl", "template_ouuzkjs", this)
             .then(function(response) {
                 alert("Message sent successfully!");
                 document.getElementById("contact-form").reset();
@@ -199,6 +201,7 @@
             <li><a href="#">Research</a></li>
             <li><a href="/contact/">Contact</a></li>
             <li><a href="/blog/">News</a></li>
+
           </ul>
         </div>
         <div class="footer-column">
@@ -207,7 +210,7 @@
             <li>P.O. Box 10023 Ethiopia<br>
               Somali Region , kebele 04, ayardega road, Jigjiga , Ethipiia | sebah, lebu Spring building Office No- B17 Addis Ababa</li>
             <li>info@sirad.dev</li>
-            <li>+251 914090107</li>
+            <li>+251 955838957</li>
           </ul>
         </div>
       </div>
