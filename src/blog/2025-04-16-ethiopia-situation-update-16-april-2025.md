@@ -4,7 +4,7 @@ css: blog-post.css
 title: Ethiopia situation update (16 April 2025)
 date: 2025-04-16T16:09:03.463Z
 image: /images/Ethio news.webp
-excerpt: ''
+excerpt: 'Sirad Institute for Research and Development (SIRAD) '
 ---
 ### **Civilian targeting increases while Fano-ENDF clashes decline in Amhara**
 
