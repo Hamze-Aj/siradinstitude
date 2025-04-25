@@ -104,6 +104,7 @@ nav {
     font-size: 15px;
     font-weight: 500;
     color: var(--charcoal);
+    background-color: white;
 
 }
 .capacity-option{
@@ -114,6 +115,8 @@ nav {
     font-size: 15px;
     font-weight: 500;
     color: var(--charcoal);
+    background-color: white;
+
 }
 
 /* Hero Section */
