@@ -5,7 +5,7 @@ title: >-
   Echoes of Ethiopia: Interethnic Youth Dialogue for Peace and Unity -A Workshop
   with Jigjiga University Students
 date: 2025-04-16T16:13:55.221Z
-image: /images/Banner for JJU studens.jpg
+image: /images/GROUP PHOTO JJU.jpg
 ---
 **SIRAD Institute for Research and Development**, a leading civil society organization, is committed to uniting communities and developing sustainable, evidence-based solutions for peace and social cohesion.
 
