@@ -2,6 +2,7 @@ module.exports = function(eleventyConfig) {
   // Passthrough static assets
   eleventyConfig.addPassthroughCopy("src/contact.css");
   eleventyConfig.addPassthroughCopy("src/home.css");
+  eleventyConfig.addPassthroughCopy("src/about-programs.css");
   eleventyConfig.addPassthroughCopy("src/partners-img");
   eleventyConfig.addPassthroughCopy("src/research");
   eleventyConfig.addPassthroughCopy("src/capacity");
