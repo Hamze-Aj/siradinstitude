@@ -1,4 +1,4 @@
-fetch('../research/shared/header.html')
+fetch('/research/shared/header.html')
   .then(response => {
     if (!response.ok) {
       throw new Error('Failed to load header');
@@ -9,18 +9,23 @@ fetch('../research/shared/header.html')
     document.getElementById('header-placeholder').innerHTML = data;
 
     const menuToggle = document.querySelector('.menu-toggle');
-        const navLinks = document.querySelector('.nav-links');
+    const navLinks = document.querySelector('.nav-links');
 
-        menuToggle.addEventListener('click', function () {
-            navLinks.classList.toggle('active');
-        });
+    menuToggle.addEventListener('click', function () {
+      navLinks.classList.toggle('active');
+    });
 
-        document.getElementById('researchDropdown').addEventListener('change', function () {
-            if (this.value) {
-                window.location.href = this.value;
-            }
-        });
-    
+    document.getElementById('researchDropdown').addEventListener('change', function () {
+      if (this.value) {
+        window.location.href = this.value;
+      }
+    });
+
+    document.getElementById('capacityDropdown').addEventListener('change', function () {
+      if (this.value) {
+        window.location.href = this.value;
+      }
+    });
   })
   .catch(error => {
     console.error('Error loading header:', error);
